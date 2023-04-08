@@ -33,6 +33,7 @@ public class Main {
         }
 
         //DELETE
+        System.out.println("Введите id пользователя для удаления");
         int i = scanner.nextInt();
         try (Connection conn = DriverManager.getConnection(DB_URL, USER, PASS);
              PreparedStatement stmt = conn.prepareStatement(DELETE)) {
